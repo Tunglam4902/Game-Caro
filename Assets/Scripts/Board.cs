@@ -14,9 +14,6 @@ public class Board : MonoBehaviour
     private static int xWinsCount = 0; // So lan win cua O va X
     private static int oWinsCount = 0;
 
-
-
-
     public int boardSize;
 
     // Khai bao currenTurn ban dau la "x"
@@ -25,7 +22,6 @@ public class Board : MonoBehaviour
     // Hien thi so lan thang
     public Text xWinsText;
     public Text oWinsText;
-
 
     // Khoi tao matrix de luu giu toa do
     private string[,] matrix;
@@ -63,8 +59,9 @@ public class Board : MonoBehaviour
         }
     }
 
+    // Hien thi va dem so lan thang
     private void InitializeWinsCount()
-    {
+    { 
         xWinsCount = 0 + xWinsCount;
         oWinsCount = 0 + oWinsCount;
         UpdateWinsText();

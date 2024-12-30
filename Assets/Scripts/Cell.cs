@@ -51,11 +51,13 @@ using System.Collections;
         public void OnClick(){
             ChangeImage(board.currentTurn);
             audioSource.Play(); // Phát âm thanh khi click
+            
             // Hien thi cua so GameOver
             if (board.Check(row, column)){
                 GameObject window = Instantiate(gameOverWindow, canvas);
                 window.GetComponent<GameOver>().SetName(board.currentTurn);
             }
+            // Luan phien X va O
             if (board.currentTurn == "x"){
                 board.currentTurn = "o";
             }

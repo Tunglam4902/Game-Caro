@@ -9,11 +9,6 @@ public class GameOver : MonoBehaviour
 
     public Button restartButton;
 
-    public void ReturnToMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
     private void Awake(){
         restartButton.onClick.AddListener(OnClick);
     }
